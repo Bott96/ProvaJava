@@ -24,7 +24,7 @@ public class myFrame extends JFrame {
 	JPanel P;
 
 
-	JButton B,B1,B2,B3,B4;
+	JButton B,B1,B2,B3,B4,B5;
 	
 	
 	public myFrame() {
@@ -38,6 +38,7 @@ public class myFrame extends JFrame {
 		B2 = new JButton("CliccaQuestoSaso");
 		B3 = new JButton("Vai qui");
 		B4 = new JButton("Dopo di lei");
+		B5 = new JButton("ok :-D");
 		
 		this.setTitle("Checcah");
 		
@@ -115,12 +116,24 @@ B4.addActionListener(new ActionListener() {
 		dialog.setVisible(true); // to visible the dialog
 	}
 });
+B5.addActionListener(new ActionListener() {		
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+	
+		JOptionPane optionPane = new JOptionPane("This Button not fa nu cazz",JOptionPane.WARNING_MESSAGE);
+		JDialog dialog = optionPane.createDialog("Warning!");
+		dialog.setAlwaysOnTop(true); // to show top of all other application
+		dialog.setVisible(true); // to visible the dialog
+	}
+});
 	
 	P.add(B);
 	P.add(B1);
 	P.add(B2);
 	P.add(B3);
 	P.add(B4);
+	P.add(B5);
 		
 	}
 	
