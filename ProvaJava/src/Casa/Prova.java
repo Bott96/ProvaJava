@@ -5,6 +5,11 @@ public class Prova {
 		System.out.println("Ciao Sasa");
 		System.out.println("Sei una cacca");
 		
+		myFrame m = new myFrame();
+		m.setVisible(true);
+
+		m.setFocusable(true);
+		
 	}
 
 }
