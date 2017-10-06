@@ -31,7 +31,7 @@ public class myFrame extends JFrame {
 		super();
 
 		P = new JPanel();
-		B= new JButton("CliccamiSaso");
+		B= new JButton("MiSeccaAggiugnereB5Ahahah");
 
 		B1= new JButton("CliccaQuestoThomas");
 
@@ -58,7 +58,7 @@ public class myFrame extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 			
-				JOptionPane optionPane = new JOptionPane("TIPO COSAAAAAA?!?!?!?!?",JOptionPane.WARNING_MESSAGE);
+				JOptionPane optionPane = new JOptionPane("Siiiii,Solo Convertire Java Swing",JOptionPane.WARNING_MESSAGE);
 				JDialog dialog = optionPane.createDialog("Warning!");
 				dialog.setAlwaysOnTop(true); // to show top of all other application
 				dialog.setVisible(true); // to visible the dialog
