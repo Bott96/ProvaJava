@@ -29,7 +29,7 @@ public class myFrame extends JFrame {
 		super();
 
 		P = new JPanel();
-		B= new JButton("CliccamiThomas");
+		B= new JButton("CliccamiSaso");
 		
 		this.setTitle("Checcah");
 		
@@ -53,7 +53,7 @@ public class myFrame extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 			
-				JOptionPane optionPane = new JOptionPane("FACCIAMO QUALCOSA DI SIMPATICO?!?!?!?!?",JOptionPane.WARNING_MESSAGE);
+				JOptionPane optionPane = new JOptionPane("TIPO COSAAAAAA?!?!?!?!?",JOptionPane.WARNING_MESSAGE);
 				JDialog dialog = optionPane.createDialog("Warning!");
 				dialog.setAlwaysOnTop(true); // to show top of all other application
 				dialog.setVisible(true); // to visible the dialog
