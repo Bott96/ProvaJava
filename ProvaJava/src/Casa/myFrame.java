@@ -53,8 +53,8 @@ public class myFrame extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 			
-				JOptionPane optionPane = new JOptionPane("FACCIAMO QUALCOSA DI SIMPATICO",JOptionPane.WARNING_MESSAGE);
-				JDialog dialog = optionPane.createDialog("TATATATAAAAAAAAAAA");
+				JOptionPane optionPane = new JOptionPane("FACCIAMO QUALCOSA DI SIMPATICO?!?!?!?!?",JOptionPane.WARNING_MESSAGE);
+				JDialog dialog = optionPane.createDialog("Warning!");
 				dialog.setAlwaysOnTop(true); // to show top of all other application
 				dialog.setVisible(true); // to visible the dialog
 			}
