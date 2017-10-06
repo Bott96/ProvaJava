@@ -23,6 +23,8 @@ public class myFrame extends JFrame {
 	
 	JPanel P;
 	JButton B;
+
+	JButton B1;
 	
 	
 	public myFrame() {
@@ -30,6 +32,8 @@ public class myFrame extends JFrame {
 
 		P = new JPanel();
 		B= new JButton("CliccamiSaso");
+
+		B1= new JButton("CliccaQuestoThomas");
 		
 		this.setTitle("Checcah");
 		
@@ -59,7 +63,25 @@ public class myFrame extends JFrame {
 				dialog.setVisible(true); // to visible the dialog
 			}
 		});
-		P.add(B);
+		
+		
+		
+	B1.addActionListener(new ActionListener() {
+			
+		
+			
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+			
+				JOptionPane optionPane = new JOptionPane("Qualcosa di carino per usare java swing su android",JOptionPane.WARNING_MESSAGE);
+				JDialog dialog = optionPane.createDialog("Warning!");
+				dialog.setAlwaysOnTop(true); // to show top of all other application
+				dialog.setVisible(true); // to visible the dialog
+			}
+		});
+	P.add(B);
+	P.add(B1);
 		
 	}
 	
