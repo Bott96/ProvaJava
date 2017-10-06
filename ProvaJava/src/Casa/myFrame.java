@@ -24,7 +24,7 @@ public class myFrame extends JFrame {
 	JPanel P;
 
 
-	JButton B,B1,B2,B3;
+	JButton B,B1,B2,B3,B4;
 	
 	
 	public myFrame() {
@@ -37,6 +37,7 @@ public class myFrame extends JFrame {
 
 		B2 = new JButton("CliccaQuestoSaso");
 		B3 = new JButton("Vai qui");
+		B4 = new JButton("Dopo di lei");
 		
 		this.setTitle("Checcah");
 		
@@ -102,10 +103,24 @@ B3.addActionListener(new ActionListener() {
 			dialog.setVisible(true); // to visible the dialog
 		}
 	});
+
+B4.addActionListener(new ActionListener() {		
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+	
+		JOptionPane optionPane = new JOptionPane("Ok poi un giorno di questi a lezione cerchiamo come convertire swing in android\n sennò ci tocca impararlo e non so se riusciamo a trovare il tempo",JOptionPane.WARNING_MESSAGE);
+		JDialog dialog = optionPane.createDialog("Warning!");
+		dialog.setAlwaysOnTop(true); // to show top of all other application
+		dialog.setVisible(true); // to visible the dialog
+	}
+});
 	
 	P.add(B);
 	P.add(B1);
 	P.add(B2);
+	P.add(B3);
+	P.add(B4);
 		
 	}
 	
