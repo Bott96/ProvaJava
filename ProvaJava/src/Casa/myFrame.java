@@ -22,9 +22,9 @@ public class myFrame extends JFrame {
 	
 	
 	JPanel P;
-	JButton B;
 
-	JButton B1,B2;
+
+	JButton B,B1,B2,B3;
 	
 	
 	public myFrame() {
@@ -36,6 +36,7 @@ public class myFrame extends JFrame {
 		B1= new JButton("CliccaQuestoThomas");
 
 		B2 = new JButton("CliccaQuestoSaso");
+		B3 = new JButton("Vai qui");
 		
 		this.setTitle("Checcah");
 		
@@ -88,6 +89,20 @@ public class myFrame extends JFrame {
 			dialog.setVisible(true); // to visible the dialog
 		}
 	});
+	
+	
+B3.addActionListener(new ActionListener() {		
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+		
+			JOptionPane optionPane = new JOptionPane("Cazzi Nostri, giusto per prendere confidenza con git  Ahahah",JOptionPane.WARNING_MESSAGE);
+			JDialog dialog = optionPane.createDialog("Warning!");
+			dialog.setAlwaysOnTop(true); // to show top of all other application
+			dialog.setVisible(true); // to visible the dialog
+		}
+	});
+	
 	P.add(B);
 	P.add(B1);
 	P.add(B2);
